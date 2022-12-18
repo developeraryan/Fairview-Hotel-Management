@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fairview-hotel-32147": {
+      "hosting": {
+        "fairview-hotelmgmt": [
+          "fairview-hotel-32147"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fairview-hotel-32147"
+  }
+}

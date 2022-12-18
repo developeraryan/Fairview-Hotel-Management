@@ -30,7 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           },
@@ -96,6 +98,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "fairview-hotelmgmt:build:production",
+            "firebaseProject": "fairview-hotel-32147",
+            "firebaseHostingSite": "fairview-hotel-32147"
           }
         }
       }
