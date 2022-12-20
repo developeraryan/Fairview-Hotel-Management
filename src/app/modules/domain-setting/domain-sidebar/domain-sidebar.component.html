@@ -1,0 +1,12 @@
+
+<div class="main-sidebar">
+  <div class="d-flex flex-column flex-shrink-0 p-3">
+    <ul class="nav nav-pills flex-column mb-auto" *ngFor="let list of domainlist">
+      <li class="nav-item">
+        <a class="nav-link" [routerLinkActive]="'active'" routerLink="{{list.route}}">{{list.name}}</a>
+      </li>
+      <hr>
+    </ul>
+  </div>
+</div>
+
